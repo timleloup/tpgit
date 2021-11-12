@@ -1,0 +1,10 @@
+C:\Users\C1E25\Desktop\TPGIT\git\git\bin\Debug\git.exe.config
+C:\Users\C1E25\Desktop\TPGIT\git\git\bin\Debug\git.exe
+C:\Users\C1E25\Desktop\TPGIT\git\git\bin\Debug\git.pdb
+C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.csprojAssemblyReference.cache
+C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.frmAccueil.resources
+C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.Properties.Resources.resources
+C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.csproj.GenerateResource.cache
+C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.csproj.CoreCompileInputs.cache
+C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.exe
+C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.pdb

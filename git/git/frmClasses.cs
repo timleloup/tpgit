@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace git
 {
-    public partial class Form1 : Form
+    public partial class frmClasses : Form
     {
-        public Form1()
+        public frmClasses()
         {
             InitializeComponent();
         }
