@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccueil));
             this.label1 = new System.Windows.Forms.Label();
             this.gestionClasses = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,12 +56,23 @@
             this.gestionClasses.UseVisualStyleBackColor = true;
             this.gestionClasses.Click += new System.EventHandler(this.gestionClasses_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(296, 107);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 59);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "gestion Salles";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.gestionClasses);
             this.Controls.Add(this.label1);
             this.Name = "frmAccueil";
@@ -75,6 +87,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button gestionClasses;
+        private System.Windows.Forms.Button button1;
     }
 }
 

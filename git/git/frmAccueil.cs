@@ -28,5 +28,13 @@ namespace git
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmSalle fs = new frmSalle();
+            fs.Show();
+
+        }
     }
 }
