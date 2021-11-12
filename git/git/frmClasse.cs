@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace git
 {
-    public partial class frmClasses : Form
+    public partial class frmClasse : Form
     {
-        public frmClasses()
+        public frmClasse()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmAccueil fp = new frmAccueil();
-            fp.Show();
         }
     }
 }
