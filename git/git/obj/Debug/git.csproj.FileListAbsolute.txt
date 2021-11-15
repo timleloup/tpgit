@@ -43,3 +43,4 @@ C:\Users\c1e01\Desktop\TPGIT\git\git\bin\Debug\System.Memory.xml
 C:\Users\c1e01\Desktop\TPGIT\git\git\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\c1e01\Desktop\TPGIT\git\git\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\c1e01\Desktop\TPGIT\git\git\obj\Debug\git.csproj.CopyComplete
+C:\Users\c1e01\Desktop\TPGIT\git\git\obj\Debug\git.frmEnseignant.resources

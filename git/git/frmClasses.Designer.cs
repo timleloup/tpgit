@@ -64,6 +64,7 @@
             this.ClientSize = new System.Drawing.Size(835, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmClasses";
             this.Text = "frmclasses";
             this.ResumeLayout(false);

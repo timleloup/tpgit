@@ -36,5 +36,12 @@ namespace git
             fs.Show();
 
         }
+
+        private void GestionEnseignant_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmEnseignant fs = new frmEnseignant();
+            fs.Show();
+        }
     }
 }
