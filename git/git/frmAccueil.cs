@@ -28,5 +28,12 @@ namespace git
         {
 
         }
+
+        private void cours_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmCours fc = new frmCours();
+            fc.Show();
+        }
     }
 }
