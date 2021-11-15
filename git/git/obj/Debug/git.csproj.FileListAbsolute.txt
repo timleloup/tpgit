@@ -8,7 +8,6 @@ C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.csproj.GenerateResource.cache
 C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.csproj.CoreCompileInputs.cache
 C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.exe
 C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.pdb
-C:\Users\c1e01\Desktop\TPGIT\git\git\obj\Debug\git.csprojAssemblyReference.cache
 C:\Users\c1e01\Desktop\TPGIT\git\git\obj\Debug\git.frmAccueil.resources
 C:\Users\c1e01\Desktop\TPGIT\git\git\obj\Debug\git.frmClasses.resources
 C:\Users\c1e01\Desktop\TPGIT\git\git\obj\Debug\git.frmSalle.resources
@@ -44,3 +43,4 @@ C:\Users\c1e01\Desktop\TPGIT\git\git\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\c1e01\Desktop\TPGIT\git\git\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\c1e01\Desktop\TPGIT\git\git\obj\Debug\git.csproj.CopyComplete
 C:\Users\c1e01\Desktop\TPGIT\git\git\obj\Debug\git.frmEnseignant.resources
+C:\Users\c1e01\Desktop\TPGIT\git\git\obj\Debug\git.csprojAssemblyReference.cache

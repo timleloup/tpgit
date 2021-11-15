@@ -72,8 +72,66 @@ namespace git
                 }
 
                 dgvSalle.DataSource = Salles;
-                dgvSalle.Columns.Add("button","btn");
 
+                
+                DataGridViewButtonColumn addbtn = new DataGridViewButtonColumn();
+
+
+                addbtn.HeaderText = "Ajouter";
+                addbtn.Text = "insérer";                        
+                addbtn.UseColumnTextForButtonValue = true;
+
+
+                dgvSalle.Columns.Add(addbtn);
+
+
+
+                DataGridViewButtonColumn updbtn = new DataGridViewButtonColumn();
+
+
+                updbtn.HeaderText = "Modifier";
+                updbtn.Text = "modifier";       
+                updbtn.UseColumnTextForButtonValue = true;
+
+
+                dgvSalle.Columns.Add(updbtn);
+
+
+
+                DataGridViewButtonColumn delbtn = new DataGridViewButtonColumn();
+
+
+                delbtn.HeaderText = "Supprimer";
+                delbtn.Text = "supprimer";                        
+                delbtn.UseColumnTextForButtonValue = true;
+
+                dgvSalle.Columns.Add(delbtn);
+                
+
+
+                dgvSalle.CellContentClick += (s, a) =>
+                {
+                    if (dgvSalle.Columns[a.ColumnIndex].HeaderText  == "Ajouter")
+                    {
+                        MessageBox.Show("coucou");
+                    }
+                };
+
+                dgvSalle.CellContentClick += (s, a) =>
+                {
+                    if (dgvSalle.Columns[a.ColumnIndex].HeaderText  == "Modifier")
+                    {
+                        MessageBox.Show("update");
+                    }
+                };
+
+                dgvSalle.CellContentClick += (s, a) =>
+                {
+                    if (dgvSalle.Columns[a.ColumnIndex].HeaderText  == "Supprimer")
+                    {
+                        MessageBox.Show("suppr");
+                    }
+                };
 
             }
             catch (Exception a)
@@ -82,6 +140,8 @@ namespace git
             }
 
         }
+
+       
     }
 
 }
