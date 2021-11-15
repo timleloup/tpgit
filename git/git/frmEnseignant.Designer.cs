@@ -47,7 +47,6 @@
             // 
             // dgvProf
             // 
-            this.dgvProf.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvProf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProf.Location = new System.Drawing.Point(12, 85);
             this.dgvProf.Name = "dgvProf";

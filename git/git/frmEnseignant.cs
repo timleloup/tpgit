@@ -50,7 +50,7 @@ namespace git
             try
             {
 
-                string queryUser = "Select id,nom From prof";
+                string queryUser = "Select * From prof";
                 MySqlCommand select = new MySqlCommand(queryUser, connexion);
                 MySqlDataReader reader = select.ExecuteReader();
                 while (reader.Read())
@@ -60,17 +60,81 @@ namespace git
 
                     prof.Id = reader.GetInt32("id");
                     prof.Nom = reader.GetString("nom");
-                    prof.Nom = reader.GetString("prenom");
-                    prof.Nom = reader.GetString("adresse");
-                    prof.Nom = reader.GetString("tel");
-                    prof.Nom = reader.GetString("mail");
-                    prof.Nom = reader.GetString("dateembauche");
+                    prof.Prenom = reader.GetString("prenom");
+                    prof.Adresse = reader.GetString("adresse");
+                    prof.Tel = reader.GetString("tel");
+                    prof.Mail = reader.GetString("mail");
+                    prof.Dateembauche = reader.GetString("dateembauche");
 
                     Profs.Add(prof);
                 }
 
                 dgvProf.DataSource = Profs;
-                dgvProf.Columns.Add("button", "btn");
+
+
+                DataGridViewButtonColumn addbtn = new DataGridViewButtonColumn();
+
+
+                addbtn.HeaderText = "Ajouter";
+                addbtn.Text = "insérer";
+                addbtn.UseColumnTextForButtonValue = true;
+
+
+                dgvProf.Columns.Add(addbtn);
+
+
+
+                DataGridViewButtonColumn updbtn = new DataGridViewButtonColumn();
+
+
+                updbtn.HeaderText = "Modifier";
+                updbtn.Text = "modifier";
+                updbtn.UseColumnTextForButtonValue = true;
+
+
+                dgvProf.Columns.Add(updbtn);
+
+
+
+                DataGridViewButtonColumn delbtn = new DataGridViewButtonColumn();
+
+
+                delbtn.HeaderText = "Supprimer";
+                delbtn.Text = "supprimer";
+                delbtn.UseColumnTextForButtonValue = true;
+
+                dgvProf.Columns.Add(delbtn);
+
+
+
+                dgvProf.CellContentClick += (s, a) =>
+                {
+                    if (dgvProf.Columns[a.ColumnIndex].HeaderText == "Ajouter")
+                    {
+                        MessageBox.Show("coucou");
+                    }
+                };
+
+                dgvProf.CellContentClick += (s, a) =>
+                {
+                    if (dgvProf.Columns[a.ColumnIndex].HeaderText == "Modifier")
+                    {
+                        MessageBox.Show("update");
+                    }
+                };
+
+                dgvProf.CellContentClick += (s, a) =>
+                {
+                    if (dgvProf.Columns[a.ColumnIndex].HeaderText == "Supprimer")
+                    {
+                        if (MessageBox.Show("Suppr ?","Message",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes){
+                            
+
+                            MessageBox.Show(a.ToString());
+                            
+                        }
+                    }
+                };
 
 
             }
