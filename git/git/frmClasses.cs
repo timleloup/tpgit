@@ -83,24 +83,7 @@ namespace git
 
                 dgvClasses.DataSource = Classe;
 
-                DataGridViewButtonColumn dgvbt = new DataGridViewButtonColumn();
-
-                dgvbt.HeaderText = "inserer";
-                dgvbt.Text = "insérer";
-                dgvbt.UseColumnTextForButtonValue = true;
-
-                dgvClasses.Columns.Add(dgvbt);
-
-                dgvClasses.CellContentClick += (s, a) =>
-                {
-                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "inserer")
-                    {
-
-                        MessageBox.Show("ok");
-
-
-                    }
-                };
+              
 
                 DataGridViewButtonColumn dgvbts = new DataGridViewButtonColumn();
 
@@ -142,15 +125,15 @@ namespace git
 
                 DataGridViewButtonColumn dgvbtsss = new DataGridViewButtonColumn();
 
-                dgvbtss.HeaderText = "list eleve";
-                dgvbtss.Text = "liste eleve";
-                dgvbtss.UseColumnTextForButtonValue = true;
+                dgvbtsss.HeaderText = "liste eleve";
+                dgvbtsss.Text = "liste eleve";
+                dgvbtsss.UseColumnTextForButtonValue = true;
 
-                dgvClasses.Columns.Add(dgvbtss);
+                dgvClasses.Columns.Add(dgvbtsss);
 
                 dgvClasses.CellContentClick += (s, a) =>
                 {
-                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "list eleve")
+                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "liste eleve")
                     {
 
                         MessageBox.Show("ok");

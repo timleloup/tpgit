@@ -87,24 +87,7 @@ namespace git
 
                 dgvClasses.DataSource = Cour;
 
-                DataGridViewButtonColumn dgvbt = new DataGridViewButtonColumn();
-
-                dgvbt.HeaderText = "inserer";
-                dgvbt.Text = "insérer";
-                dgvbt.UseColumnTextForButtonValue = true;
-
-                dgvClasses.Columns.Add(dgvbt);
-
-                dgvClasses.CellContentClick += (s, a) =>
-                {
-                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "inserer")
-                    {
-
-                        MessageBox.Show("ok");
-
-
-                    }
-                };
+               
 
                 DataGridViewButtonColumn dgvbts = new DataGridViewButtonColumn();
 
@@ -113,6 +96,20 @@ namespace git
                 dgvbts.UseColumnTextForButtonValue = true;
 
                 dgvClasses.Columns.Add(dgvbts);
+
+                  dgvClasses.CellContentClick += (s, a) =>
+                {
+                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "supprimer")
+                    {
+
+                        if (MessageBox.Show("supp?", "message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes
+                       ) { 
+                        
+                        
+                        }
+
+                    }
+                };
 
               
 
@@ -137,11 +134,11 @@ namespace git
 
                 DataGridViewButtonColumn dgvbtsss = new DataGridViewButtonColumn();
 
-                dgvbtss.HeaderText = "liste eleve";
-                dgvbtss.Text = "liste eleve";
-                dgvbtss.UseColumnTextForButtonValue = true;
+                dgvbtsss.HeaderText = "liste eleve";
+                dgvbtsss.Text = "liste eleve";
+                dgvbtsss.UseColumnTextForButtonValue = true;
 
-                dgvClasses.Columns.Add(dgvbtss);
+                dgvClasses.Columns.Add(dgvbtsss);
 
                 dgvClasses.CellContentClick += (s, a) =>
                 {

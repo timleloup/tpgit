@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvClasses = new System.Windows.Forms.DataGridView();
+            this.ajout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClasses)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +67,18 @@
             this.dgvClasses.TabIndex = 2;
             this.dgvClasses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // ajout
+            // 
+            this.ajout.BackColor = System.Drawing.Color.Transparent;
+            this.ajout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ajout.BackgroundImage")));
+            this.ajout.FlatAppearance.BorderSize = 0;
+            this.ajout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ajout.Location = new System.Drawing.Point(749, 12);
+            this.ajout.Name = "ajout";
+            this.ajout.Size = new System.Drawing.Size(74, 74);
+            this.ajout.TabIndex = 3;
+            this.ajout.UseVisualStyleBackColor = false;
+            // 
             // frmClasses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -73,6 +86,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(835, 450);
+            this.Controls.Add(this.ajout);
             this.Controls.Add(this.dgvClasses);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -90,5 +104,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvClasses;
+        private System.Windows.Forms.Button ajout;
     }
 }

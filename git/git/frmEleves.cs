@@ -83,25 +83,7 @@ namespace git
 
                 dgvClasses.DataSource = Eleve;
 
-                DataGridViewButtonColumn dgvbt = new DataGridViewButtonColumn();
-
-                dgvbt.HeaderText = "ajouter";
-                dgvbt.Text = "insérer";
-                dgvbt.UseColumnTextForButtonValue = true;
-                
-
-                dgvClasses.Columns.Add(dgvbt);
-
-                dgvClasses.CellContentClick += (s, a) =>
-                {
-                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "ajouter")
-                    {
-
-                        MessageBox.Show("ok");
-
-
-                    }
-                };
+               
 
 
 
