@@ -85,35 +85,79 @@ namespace git
 
                 DataGridViewButtonColumn dgvbt = new DataGridViewButtonColumn();
 
-                dgvbt.HeaderText = "Boutton";
+                dgvbt.HeaderText = "inserer";
                 dgvbt.Text = "insérer";
                 dgvbt.UseColumnTextForButtonValue = true;
 
                 dgvClasses.Columns.Add(dgvbt);
 
+                dgvClasses.CellContentClick += (s, a) =>
+                {
+                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "inserer")
+                    {
+
+                        MessageBox.Show("ok");
+
+
+                    }
+                };
+
                 DataGridViewButtonColumn dgvbts = new DataGridViewButtonColumn();
 
-                dgvbts.HeaderText = "Boutton";
+                dgvbts.HeaderText = "supprimer";
                 dgvbts.Text = "supprimer";
                 dgvbts.UseColumnTextForButtonValue = true;
 
                 dgvClasses.Columns.Add(dgvbts);
 
+                dgvClasses.CellContentClick += (s, a) =>
+                {
+                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "supprimer")
+                    {
+
+                        MessageBox.Show("ok");
+
+
+                    }
+                };
+
                 DataGridViewButtonColumn dgvbtss = new DataGridViewButtonColumn();
 
-                dgvbtss.HeaderText = "Boutton";
+                dgvbtss.HeaderText = "modifier";
                 dgvbtss.Text = "modifer";
                 dgvbtss.UseColumnTextForButtonValue = true;
 
                 dgvClasses.Columns.Add(dgvbtss);
 
+                dgvClasses.CellContentClick += (s, a) =>
+                {
+                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "modifier")
+                    {
+
+                        MessageBox.Show("ok");
+
+
+                    }
+                };
+
                 DataGridViewButtonColumn dgvbtsss = new DataGridViewButtonColumn();
 
-                dgvbtss.HeaderText = "boutton";
+                dgvbtss.HeaderText = "list eleve";
                 dgvbtss.Text = "liste eleve";
                 dgvbtss.UseColumnTextForButtonValue = true;
 
                 dgvClasses.Columns.Add(dgvbtss);
+
+                dgvClasses.CellContentClick += (s, a) =>
+                {
+                    if (dgvClasses.Columns[a.ColumnIndex].HeaderText == "list eleve")
+                    {
+
+                        MessageBox.Show("ok");
+
+
+                    }
+                };
 
 
 
