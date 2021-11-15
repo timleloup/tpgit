@@ -91,6 +91,7 @@
   <ItemGroup>
     <Compile Include="Classes.cs" />
     <Compile Include="cours.cs" />
+    <Compile Include="eleves.cs" />
     <Compile Include="frmAccueil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +110,12 @@
     <Compile Include="frmCours.Designer.cs">
       <DependentUpon>frmCours.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEleves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEleves.Designer.cs">
+      <DependentUpon>frmEleves.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAccueil.resx">
@@ -119,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCours.resx">
       <DependentUpon>frmCours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEleves.resx">
+      <DependentUpon>frmEleves.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

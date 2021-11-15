@@ -35,5 +35,12 @@ namespace git
             frmCours fc = new frmCours();
             fc.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmEleves fe = new frmEleves();
+            fe.Show();
+        }
     }
 }
