@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes.cs" />
+    <Compile Include="cours.cs" />
     <Compile Include="frmAccueil.cs">
       <SubType>Form</SubType>
     </Compile>
