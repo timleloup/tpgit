@@ -83,6 +83,34 @@ namespace git
 
                 dgvClasses.DataSource = Eleve;
 
+                DataGridViewButtonColumn dgvbt = new DataGridViewButtonColumn();
+
+                dgvbt.HeaderText = "Boutton";
+                dgvbt.Text = "insérer";
+                dgvbt.UseColumnTextForButtonValue = true;
+
+                dgvClasses.Columns.Add(dgvbt);
+
+                DataGridViewButtonColumn dgvbts = new DataGridViewButtonColumn();
+
+                dgvbts.HeaderText = "Boutton";
+                dgvbts.Text = "supprimer";
+                dgvbts.UseColumnTextForButtonValue = true;
+
+                dgvClasses.Columns.Add(dgvbts);
+
+                DataGridViewButtonColumn dgvbtss = new DataGridViewButtonColumn();
+
+                dgvbtss.HeaderText = "Boutton";
+                dgvbtss.Text = "modifer";
+                dgvbtss.UseColumnTextForButtonValue = true;
+
+                dgvClasses.Columns.Add(dgvbtss);
+
+              
+
+
+
             }
             catch (Exception ex)
             {
@@ -91,7 +119,7 @@ namespace git
             }
 
 
-            dgvClasses.Columns.Add("button", "btn");
+            
 
 
             connect.Close();
