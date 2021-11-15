@@ -32,3 +32,4 @@ C:\Users\C1E25\Desktop\TPGIT\git\git\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\C1E25\Desktop\TPGIT\git\git\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.frmClasses.resources
 C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.csproj.CopyComplete
+C:\Users\C1E25\Desktop\TPGIT\git\git\obj\Debug\git.frmCours.resources

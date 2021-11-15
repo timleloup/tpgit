@@ -74,7 +74,13 @@ namespace git
                 {
                     cours monCours = new cours();
                     monCours.Id = emp.GetInt32("id");
-                    monCours.Numero = emp.GetString("numero");
+                    monCours.Idmatiere = emp.GetInt32("idmatiere");
+                    monCours.Date = emp.GetString("date");
+                    monCours.Heure = emp.GetString("heure");
+                    monCours.Duree = emp.GetString("duree");
+                    monCours.Idprof = emp.GetInt32("idprof");
+                    monCours.Idsalle = emp.GetInt32("idsalle");
+                    monCours.Idclasse = emp.GetInt32("idclasse");
 
                     Cour.Add(monCours);
 
