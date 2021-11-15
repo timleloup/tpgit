@@ -54,7 +54,6 @@
             this.dgvClasses.Name = "dgvClasses";
             this.dgvClasses.Size = new System.Drawing.Size(592, 319);
             this.dgvClasses.TabIndex = 3;
-            this.dgvClasses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClasses_CellContentClick);
             // 
             // button1
             // 
